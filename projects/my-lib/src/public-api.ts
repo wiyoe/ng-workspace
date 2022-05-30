@@ -7,3 +7,5 @@ export * from './lib/my-lib.component';
 export * from './lib/my-lib.module';
 
 export * from './lib/other/other.component';
+
+export * from './lib/types';
