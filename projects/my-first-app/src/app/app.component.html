@@ -107,5 +107,65 @@
     </button>
   </div>
 
+  <div class="mt-4">
+    <h3>Bootstrap Form</h3>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+  <div class="mt-4">
+    <h3>Angualar Material</h3>
+    <section>
+      <div class="example-label">Raised</div>
+      <div class="example-button-row">
+        <button mat-raised-button>Basic</button>
+        <button mat-raised-button color="primary">Primary</button>
+        <button mat-raised-button color="accent">Accent</button>
+        <button mat-raised-button color="warn">Warn</button>
+        <button mat-raised-button disabled>Disabled</button>
+        <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+      </div>
+    </section>
+
+    <h4>Basic mat-select</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>Favorite food</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h4>Material Form</h4>
+    <form class="example-form">
+      <mat-form-field class="example-full-width d-block" appearance="fill">
+        <mat-label>Favorite food</mat-label>
+        <input matInput placeholder="Ex. Pizza" value="Sushi">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width d-block" appearance="fill">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+    </form>
+
+  </div>
+
 </div>
 

@@ -2,6 +2,19 @@
 
 @import "~bootstrap/scss/bootstrap-utilities";
 
+// https://getbootstrap.com/docs/5.0/utilities/colors/
+// Customize theme colors
+$theme-colors: (
+  "primary":    $blue-600, // Customized
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
 // Generate utilities for Cursor
 $utilities: map-merge(
     $utilities,
@@ -17,3 +30,8 @@ $utilities: map-merge(
 
 // My lib global style
 @import "dist/my-lib/src/assets/style";
+
+// Angular Material addition
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// Angular Material addition END
